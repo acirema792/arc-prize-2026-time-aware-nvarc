@@ -1,6 +1,10 @@
 # Measuring where test-time training stops: a controlled study of NVARC on ARC-AGI-2 under a fixed compute budget
 
-*ARC Prize 2026 · ARC-AGI-2 · Solution Writeup · Kaggle notebook `oscarariza3/arc2-qwen3-unsloth-flash-lora-batch4-queue`*
+*ARC Prize 2026 · ARC-AGI-2 · Solution Writeup*
+
+**Artifacts (Apache 2.0):**
+- Code, notebooks, experiment log and tests: https://github.com/acirema792/arc-prize-2026-time-aware-nvarc
+- Kaggle notebook (all 31 versions): https://www.kaggle.com/code/oscarariza3/arc2-qwen3-unsloth-flash-lora-batch4-queue
 
 ## Summary
 We took NVARC, the ARC Prize 2025 winner (Qwen3-4B fine-tuned on synthetic puzzles, per-task LoRA test-time training, depth-first sampling, augmentation-scored answer selection), and ran **eleven loops of controlled experiments (31 Kaggle runs and 6 hidden submissions)** to find out which part of the system limits its score under the 2026 budget: 240 hidden tasks in 12 hours on 4×L4.
