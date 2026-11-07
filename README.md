@@ -2,6 +2,8 @@
 
 Code and experiment record for our ARC Prize 2026 (ARC-AGI-2) entry: NVARC's Qwen3-4B test-time-training pipeline, made time-aware and crash-safe, plus the measurement harness behind 31 Kaggle runs and 6 hidden submissions. Best hidden public score: **30.56**.
 
+Official Kaggle Solution Writeup: https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/writeups/where-test-time-training-stops-time-aware-nvarc-o (same text as [`WRITEUP.md`](WRITEUP.md)). Public notebook: https://www.kaggle.com/code/oscarariza3/arc2-qwen3-unsloth-flash-lora-batch4-queue
+
 Read [`WRITEUP.md`](WRITEUP.md) first. It explains what limits the score (the base model's generation, not training, sampling or selection) and documents a validation-leakage trap.
 
 ## Contents
