@@ -1,0 +1,17 @@
+Time-aware NVARC for ARC-AGI-2
+ARC Prize 2026 entry by Oscar Ariza (Kaggle: oscarariza3).
+
+This product includes software derived from NVARC
+(https://github.com/1ytic/NVARC), the ARC Prize 2025 winning solution by
+Ivan Sorokin et al., licensed under the Apache License, Version 2.0:
+pipeline/arc_loader.py, pipeline/arc_decoder.py, pipeline/unsloth_qwen3_flash.patch,
+and the test-time training and decoding code in pipeline/llm_worker.py and
+pipeline/starter.py.
+
+The GPU-side log-probability computation in pipeline/llm_worker.py is adapted
+from mikelou1's public Kaggle notebook "ARC AGI2 LB33.89 Minimal Perfpatch",
+licensed under the Apache License, Version 2.0.
+
+Modifications: time-aware test-time training, dynamic per-task budget and
+ordering, decode guarantee, crash isolation, background rule solver
+(arc_solver.py), second-pass extensions and commit-run diagnostics.
